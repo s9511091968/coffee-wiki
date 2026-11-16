@@ -1,0 +1,149 @@
+:root {
+    --bg-color: #FAF8F5;
+    --card-bg: #FFFFFF;
+    --text-main: #3E2723;
+    --text-light: #795548;
+    --accent-color: #D35400;
+    --tag-bg: #F5E8DF;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', 'Noto Serif TC', serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    border-bottom: 1px solid #EBE4D8;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 2rem;
+}
+
+.bean-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.bean-card {
+    background-color: var(--card-bg);
+    border: 1px solid #EBE4D8;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.roast-tag {
+    align-self: flex-start;
+    background-color: var(--tag-bg);
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.bean-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+}
+
+.bean-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.bean-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(62, 39, 35, 0.08);
+    border-color: var(--accent-color);
+}
+
+.bean-content section {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid #EBE4D8;
+}
+
+.bean-content section h2 {
+    border-left: none;
+    padding-left: 0;
+    border-bottom: 1px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #EBE4D8;
+    padding-bottom: 8px;
+}
+
+ul li strong {
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: #A08C82;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
